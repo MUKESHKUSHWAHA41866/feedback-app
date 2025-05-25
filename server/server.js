@@ -32,6 +32,10 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Job Application Tracker API 🚀');
+});
+
 app.use('/api/feedback', feedbackRoutes);
 
 const PORT = process.env.PORT || 5000;
