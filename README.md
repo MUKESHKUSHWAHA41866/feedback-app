@@ -10,11 +10,16 @@ A full-stack Feedback Submission Application built with:
 Frontend
 
 cd client
+
 npm install
+
 npm run dev  
 
 
 for Backend 
+
 cd server
+
 npm install
+
 node index.js
