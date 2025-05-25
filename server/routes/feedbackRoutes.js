@@ -1,11 +1,4 @@
-// import express from 'express';
-// import { getFeedback, submitFeedback } from '../controllers/feedbackController.js';
-
-// const router = express.Router();
-// router.get('/', getFeedback);
-// router.post('/', submitFeedback);
-
-// export default router;
+ 
 
 // server/routes/feedbackRoutes.js
 const express = require('express');

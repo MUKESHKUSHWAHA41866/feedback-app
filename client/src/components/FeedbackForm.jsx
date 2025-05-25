@@ -1,61 +1,4 @@
-// import { useState } from 'react';
-
-// export default function FeedbackForm({ onFeedbackSubmit }) {
-//   const [form, setForm] = useState({ name: '', email: '', message: '' });
-//   const [success, setSuccess] = useState('');
-//   const url = import.meta.env.VITE_BACKEND_URL;
-
-//   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
-
-//   const handleSubmit = async e => {
-//     e.preventDefault();
-//     // const res = await fetch('http://localhost:5000/api/feedback', {
-//     const res = await fetch(`${url}/api/feedback`, {
-//       method: 'POST',
-//       headers: { 'Content-Type': 'application/json' },
-//       body: JSON.stringify(form)
-//     });
-//     if (res.ok) {
-//       setForm({ name: '', email: '', message: '' });
-//       setSuccess('Feedback submitted successfully!');
-//       onFeedbackSubmit();
-//     }
-//   };
-
-//   return (
-//     <form onSubmit={handleSubmit} className="space-y-4 p-4 bg-white rounded shadow">
-
-//       <input name="name" 
-//       placeholder="Name" 
-//       required 
-//       className="w-full border p-2" 
-//       value={form.name} onChange={handleChange} />
-
-//       <input name="email" type="email" 
-//       placeholder="Email"
-//       required className="w-full border p-2" 
-//       value={form.email} onChange={handleChange} />
-
-//       <textarea name="message" 
-//       placeholder="Your feedback" 
-//       required 
-//       className="w-full border p-2" 
-//       value={form.message} 
-//       onChange={handleChange} />
-
-//       <div className="flex justify-center">
-//   <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
-//     Submit
-//   </button>
-// </div>
-//       {success && <p className="text-green-600">{success}</p>}
-//     </form>
-//   );
-// }
-
-
-
-
+ 
 import { useState, useEffect } from 'react';
 import { Send, User, Mail, MessageSquare, Sparkles, CheckCircle, Heart } from 'lucide-react';
 
@@ -105,31 +48,7 @@ export default function FeedbackForm({ onFeedbackSubmit }) {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-//   const handleSubmit = async () => {
-//     setIsSubmitting(true);
-    
-//     try {
-//       const res = await fetch(`${url}/api/feedback`, {
-//         method: 'POST',
-//         headers: { 'Content-Type': 'application/json' },
-//         body: JSON.stringify(form)
-//       });
-      
-//       if (res.ok) {
-//         setForm({ name: '', email: '', message: '' });
-//         setSuccess('Feedback submitted successfully!');
-//         if (onFeedbackSubmit) onFeedbackSubmit();
-        
-//         // Auto-hide success message after 5 seconds
-//         setTimeout(() => setSuccess(''), 5000);
-//       }
-//     } catch (error) {
-//       console.error('Error submitting feedback:', error);
-//     }
-    
-//     setIsSubmitting(false);
-//   };
-
+ 
 
 const handleSubmit = async () => {
   // Basic client-side validation

@@ -1,25 +1,3 @@
-// import mongoose from 'mongoose';
-
-// const feedbackSchema = new mongoose.Schema({
-//   name: String,
-//   email: String,
-//   message: String,
-// }, { timestamps: true });
-
-// export default mongoose.model('Feedback', feedbackSchema);
-
-
-// server/models/feedbackModel.js
-
-// const mongoose = require('mongoose');
-
-// const feedbackSchema = new mongoose.Schema({
-//   name: String,
-//   email: String,
-//   message: String,
-// }, { timestamps: true });
-
-// module.exports = mongoose.model('Feedback', feedbackSchema);
 
 
 const mongoose = require('mongoose');
